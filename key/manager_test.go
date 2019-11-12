@@ -10,7 +10,7 @@ import (
 
 	"github.com/jonboulle/clockwork"
 
-	"github.com/coreos/go-oidc/jose"
+	"github.com/tlin20151/go-oidc/jose"
 )
 
 var (

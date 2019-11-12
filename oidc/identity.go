@@ -4,7 +4,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/coreos/go-oidc/jose"
+	"github.com/tlin20151/go-oidc/jose"
 )
 
 type Identity struct {

@@ -8,9 +8,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/coreos/go-oidc/jose"
-	"github.com/coreos/go-oidc/key"
-	"github.com/coreos/go-oidc/oauth2"
+	"github.com/tlin20151/go-oidc/jose"
+	"github.com/tlin20151/go-oidc/key"
+	"github.com/tlin20151/go-oidc/oauth2"
 	"github.com/kylelemons/godebug/pretty"
 )
 

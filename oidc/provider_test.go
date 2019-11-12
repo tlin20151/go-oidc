@@ -17,8 +17,8 @@ import (
 	"github.com/kylelemons/godebug/diff"
 	"github.com/kylelemons/godebug/pretty"
 
-	"github.com/coreos/go-oidc/jose"
-	"github.com/coreos/go-oidc/oauth2"
+	"github.com/tlin20151/go-oidc/jose"
+	"github.com/tlin20151/go-oidc/oauth2"
 )
 
 func TestProviderConfigDefaults(t *testing.T) {
