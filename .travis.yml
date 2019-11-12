@@ -1,8 +1,7 @@
 language: go
 
 go:
-  - 1.7.5
-  - 1.8
+  - 1.10
 
 install:
  - go get -v -t github.com/tlin20151/go-oidc/...
