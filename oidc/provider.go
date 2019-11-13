@@ -645,14 +645,6 @@ func (r *httpProviderConfigGetter) Get() (cfg ProviderConfig, err error) {
 	} else if ok {
 		cfg.ExpiresAt = r.clock.Now().UTC().Add(ttl)
 	}
-
-	// The issuer value returned MUST be identical to the Issuer URL that was directly used to retrieve the configuration information.
-	// http://openid.net/specs/openid-connect-discovery-1_0.html#ProviderConfigurationValidation
-	//if !urlEqual(cfg.Issuer.String(), r.issuerURL) {
-	//	err = fmt.Errorf(`"issuer" in config (%v) does not match provided issuer URL (%v)`, cfg.Issuer, r.issuerURL)
-	//	return
-	//}
-
 	return
 }
 
