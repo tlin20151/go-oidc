@@ -582,16 +582,6 @@ func TestHTTPProviderConfigGetter(t *testing.T) {
 			},
 			ok: true,
 		},
-		// issuer and discovery URL mismatch
-		{
-			dsc: "https://foo.com",
-			age: time.Minute,
-			cfg: ProviderConfig{
-				Issuer:    &url.URL{Scheme: "https", Host: "example.com"},
-				ExpiresAt: now.Add(time.Minute),
-			},
-			ok: false,
-		},
 		// missing cache header results in zero ExpiresAt
 		{
 			dsc: "https://example.com",
