@@ -23,8 +23,8 @@ const (
 )
 
 var (
-	DefaultScope = []string{"openid", "email", "profile"}
-
+	//DefaultScope = []string{"openid", "email", "profile"}
+	DefaultScope = []string{"openid"}
 	supportedAuthMethods = map[string]struct{}{
 		oauth2.AuthMethodClientSecretBasic: struct{}{},
 		oauth2.AuthMethodClientSecretPost:  struct{}{},
