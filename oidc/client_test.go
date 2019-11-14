@@ -36,7 +36,8 @@ func TestNewClientScopeDefault(t *testing.T) {
 		},
 		{
 			// Custom scope equal to default
-			c: ClientConfig{RedirectURL: "http://example.com/redirect", Scope: []string{"openid", "email", "profile"}},
+			// c: ClientConfig{RedirectURL: "http://example.com/redirect", Scope: []string{"openid", "email", "profile"}},
+			c: ClientConfig{RedirectURL: "http://example.com/redirect", Scope: []string{"openid"}},
 			e: DefaultScope,
 		},
 		{
