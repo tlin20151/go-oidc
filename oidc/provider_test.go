@@ -329,9 +329,7 @@ func TestProviderConfigMarshal(t *testing.T) {
 	"jwks_uri": "https://auth.example.com/jwk",
 	"registration_endpoint": "https://auth.example.com/register",
 	"scopes_supported": [
-		"openid",
-		"email",
-		"profile"
+		"openid"
 	],
 	"response_types_supported": [
 		"code"
